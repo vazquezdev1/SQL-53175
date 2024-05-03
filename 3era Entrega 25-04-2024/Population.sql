@@ -11,7 +11,7 @@ insert into kiosksdb.billscategories (_billCategory, _categoryDescription)
     ("C", "Monotributista/Exento en IVA a cualquier destinatario");
 
 -- Datos de la tabla clients
-load data local infile 'D:/Coder House/SQL/Proyecto Final/3era Entrega 25-04-2024/data_csv/2. clients_data.csv'
+load data local infile '/3era Entrega 25-04-2024/data_csv/2. clients_data.csv'
 into table clients
 fields terminated by ','
 optionally enclosed by '"'
@@ -21,7 +21,7 @@ ignore 1 rows
 (_clientDNI,_clientName,_clientSurname,_clientEmail,_clientPhoneNumber);
 
 -- Datos de la tabla kiosksowners
-load data local infile 'D:/Coder House/SQL/Proyecto Final/3era Entrega 25-04-2024/data_csv/3. kiosks_owners_data.csv'
+load data local infile '/3era Entrega 25-04-2024/data_csv/3. kiosks_owners_data.csv'
 into table kiosksowners
 fields terminated by ','
 lines terminated by '\r\n'
@@ -30,7 +30,7 @@ ignore 1 rows
 (_ownerDNI,_ownerName,_ownerSurname);
 
 -- Datos de la tabla kiosks
-load data local infile 'D:/Coder House/SQL/Proyecto Final/3era Entrega 25-04-2024/data_csv/4. kiosks_data.csv'
+load data local infile '/3era Entrega 25-04-2024/data_csv/4. kiosks_data.csv'
 into table kiosks
 fields terminated by ','
 optionally enclosed by '"'
@@ -40,7 +40,7 @@ ignore 1 rows
 (_address,_kioskName,_employeesQuantity,_ownerDNI);
 
 -- Datos de la tabla employees
-load data local infile 'D:/Coder House/SQL/Proyecto Final/3era Entrega 25-04-2024/data_csv/5. employees_data.csv'
+load data local infile '/3era Entrega 25-04-2024/data_csv/5. employees_data.csv'
 into table employees
 fields terminated by ','
 optionally enclosed by '"'
@@ -57,7 +57,7 @@ insert into kiosksdb.paymentmethod (_idPaymentMethod, _description)
     (3, "Crédito");
 
 -- Datos de la tabla products
-load data local infile 'D:/Coder House/SQL/Proyecto Final/3era Entrega 25-04-2024/data_csv/7. products_data.csv'
+load data local infile '/3era Entrega 25-04-2024/data_csv/7. products_data.csv'
 into table products
 fields terminated by ','
 optionally enclosed by '"'
@@ -67,7 +67,7 @@ ignore 1 rows
 (_description,_brand,_stockQuantity,_purchasesPricePerUnit,_sellsPricePerUnit,_purchasesDate);
 
 -- Datos de la tabla bills
-load data local infile 'D:/Coder House/SQL/Proyecto Final/3era Entrega 25-04-2024/data_csv/8. bills_data.csv'
+load data local infile '/3era Entrega 25-04-2024/data_csv/8. bills_data.csv'
 into table bills
 fields terminated by ','
 optionally enclosed by '"'
