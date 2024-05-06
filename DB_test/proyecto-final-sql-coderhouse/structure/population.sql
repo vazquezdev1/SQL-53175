@@ -21,7 +21,7 @@ ignore 1 rows
 (_clientDNI,_clientName,_clientSurname,_clientEmail,_clientPhoneNumber);
 
 -- Datos de la tabla kiosksowners
-load data local infile './proyecto-final-sql-coderhouse/structure/data_csv/3. kiosks_owners_data.csv'
+load data local infile './structure/data_csv/3. kiosks_owners_data.csv'
 into table kiosksowners
 fields terminated by ','
 lines terminated by '\r\n'
