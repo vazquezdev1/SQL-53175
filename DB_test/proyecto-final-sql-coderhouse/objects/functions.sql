@@ -31,7 +31,7 @@ delimiter ;
 delimiter //
 create function fn_calculate_billAmount (_idProduct int, _productQuantity int)
 returns float
-read sql data 
+reads sql data 
 begin
 	declare _sellsPrice float;
 	declare _amount float;
