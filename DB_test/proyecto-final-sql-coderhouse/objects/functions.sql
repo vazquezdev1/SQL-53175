@@ -51,7 +51,7 @@ begin
 end //
 delimiter ;**/
 delimiter //
-CREATE FUNCTION prueba_funcion (_parametro1 INT, _parametro2 INT)
+CREATE FUNCTION prueba_funcion (parametro1 INT, parametro2 INT)
 RETURNS INT
 --read sql data 
 DETERMINISTIC
