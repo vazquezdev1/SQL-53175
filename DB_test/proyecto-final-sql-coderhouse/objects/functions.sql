@@ -32,11 +32,11 @@ delimiter ;
 -- FUNCIÓN 3 
 delimiter //
 create function fn_calculate_billAmount (_idProduct int, _productQuantity int)
-	returns float
-	reads sql data 
-    begin
-		declare _sellsPrice float;
-		declare _amount float;
+returns float
+read sql data 
+begin
+	declare _sellsPrice float;
+	declare _amount float;
         
 		select
 			_sellsPricePerUnit into _sellsPrice
@@ -44,8 +44,8 @@ create function fn_calculate_billAmount (_idProduct int, _productQuantity int)
 			kiosksdb.products as P
 		where 
 			_idProduct = P._idProduct;
-            
+				
 		set _amount = _productQuantity * _sellsPrice;
 	return _amount;
-    end //
+end //
 delimiter ;
