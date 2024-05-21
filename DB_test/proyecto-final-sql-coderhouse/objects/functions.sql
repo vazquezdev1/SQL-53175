@@ -31,7 +31,7 @@ delimiter ;
 **/
 -- FUNCIÓN 3 
 delimiter //
-create function `fn_calculate_billAmount`(_idProduct int, _productQuantity int)
+create function fn_calculate_billAmount (_idProduct int, _productQuantity int)
 	returns float
 	reads sql data 
     begin
