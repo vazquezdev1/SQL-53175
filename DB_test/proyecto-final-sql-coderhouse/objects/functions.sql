@@ -51,14 +51,14 @@ begin
 end //
 delimiter ;**/
 delimiter //
-CREATE FUNCTION prueba_funcion (parametro1 INT, parametro2 INT)
-RETURNS INT
+create function prueba_funcion (parametro1 int, parametro2 int)
+returns int
 --read sql data 
-DETERMINISTIC
-BEGIN
+deterministic
+begin
 	--declare _sellsPrice float;
 	--declare _amount float;
-    DECLARE _result INT;
+    declare _result int;
 
 		/**select
 			_sellsPricePerUnit into _sellsPrice
@@ -68,7 +68,7 @@ BEGIN
 			_idProduct = P._idProduct;
 				
 		set _amount = _productQuantity * _sellsPrice;**/
-		SET _result = _parametro1 + _parametro2;
-	RETURN _result;
-END //
+		set _result = parametro1 + parametro2;
+	return _result;
+end //
 delimiter ;
