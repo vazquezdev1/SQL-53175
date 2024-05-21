@@ -3,9 +3,7 @@
 use kiosksdb;
 
 -- Función 1 
-/** Para la Tabla "Products" se crea la función para CALCULAR EL PRECIO DE VENTA de cada producto 
-   eligiendo el porcentaje de ganancia que el vendedor desee (tomando en cuenta el precio de compra) **/
-/**delimiter //
+delimiter //
 create function `fn_calculate_sellsPricePerUnit` (_purchasesPricePerUnit float, _added_percentage float) 
 	returns float 
     deterministic
@@ -28,9 +26,8 @@ create function `fn_calculate_salaryPerDay` (_salaryPerHour float, _workedHoursP
 		return _salaryPerXDays;
     end //
 delimiter ;
-**/
+
 -- Función 3 
-/**
 delimiter //
 create function fn_calculate_billAmount (_idProduct int, _productQuantity int)
 returns float
@@ -49,25 +46,14 @@ begin
 		set _amount = _productQuantity * _sellsPrice;
 	return _amount;
 end //
-delimiter ;**/
+delimiter ;
+
 delimiter //
 create function prueba_funcion (parametro1 int, parametro2 int)
 returns int
---read sql data 
 deterministic
 begin
-	--declare _sellsPrice float;
-	--declare _amount float;
     declare _result int;
-
-		/**select
-			_sellsPricePerUnit into _sellsPrice
-		from 
-			kiosksdb.products as P
-		where 
-			_idProduct = P._idProduct;
-				
-		set _amount = _productQuantity * _sellsPrice;**/
 		set _result = parametro1 + parametro2;
 	return _result;
 end //
