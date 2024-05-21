@@ -1,7 +1,7 @@
 															-- FUNCIONES
 
 use kiosksdb;
-
+/**
 -- FUNCIÓN 1 
 /** Para la Tabla "Products" se crea la función para CALCULAR EL PRECIO DE VENTA de cada producto 
    eligiendo el porcentaje de ganancia que el vendedor desee (tomando en cuenta el precio de compra) **/
@@ -27,7 +27,7 @@ create function `fn_calculate_salaryPerDay` (_salaryPerHour float, _workedHoursP
         set _salaryPerXDays = (_salaryPerHour * _workedHoursPerDay) * _xDays; -- Al final multiplicamos la cantidad de horas trabajadas en un día por la cantidad de días ingresada
 		return _salaryPerXDays;
     end //
-delimiter ;
+delimiter ;**/
 
 -- FUNCIÓN 3 
 delimiter //
