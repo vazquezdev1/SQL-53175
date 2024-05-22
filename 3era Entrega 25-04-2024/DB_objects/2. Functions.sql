@@ -2,9 +2,7 @@
 
 use kiosksdb;
 
--- FUNCIÓN 1 
-/** Para la Tabla "Products" se crea la función para CALCULAR EL PRECIO DE VENTA de cada producto 
-   eligiendo el porcentaje de ganancia que el vendedor desee (tomando en cuenta el precio de compra) **/
+-- Función 1 
 delimiter //
 create function `fn_calculate_sellsPricePerUnit` (_purchasesPricePerUnit float, _added_percentage float) 
 	returns float 
@@ -17,7 +15,7 @@ create function `fn_calculate_sellsPricePerUnit` (_purchasesPricePerUnit float, 
     end //
 delimiter ;
 
--- FUNCIÓN 2
+-- Función 2
 delimiter //
 create function `fn_calculate_salaryPerDay` (_salaryPerHour float, _workedHoursPerDay int, _xDays int) 
 	returns float 
@@ -29,7 +27,7 @@ create function `fn_calculate_salaryPerDay` (_salaryPerHour float, _workedHoursP
     end //
 delimiter ;
 
--- FUNCIÓN 3 
+-- Función 3 
 delimiter //
 create function `fn_calculate_billAmount`(_idProduct int, _productQuantity int)
 	returns float
