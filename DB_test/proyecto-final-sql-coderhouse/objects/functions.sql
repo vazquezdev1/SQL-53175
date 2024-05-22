@@ -47,14 +47,3 @@ begin
 	return _amount;
 end //
 delimiter ;
-
-delimiter //
-create function prueba_funcion (parametro1 int, parametro2 int)
-returns int
-deterministic
-begin
-    declare _result int;
-		set _result = parametro1 + parametro2;
-	return _result;
-end //
-delimiter ;
