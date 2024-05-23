@@ -43,9 +43,9 @@ relacionada a la venta de un producto.
 DER para ir directamente a esa sección de la página)
 </p>
 
-+ Diagrama Entidad - Relación (DER)
++ [Diagrama Entidad - Relación (DER)](https://github.com/vazquezdev1/SQL-53175/blob/main/README.md#---diagrama-entidad---relaci%C3%B3n-der)
   
-+ Descripción de las Tablas
++ [Descripción de las Tablas](https://github.com/vazquezdev1/SQL-53175/blob/main/README.md#---descripci%C3%B3n-de-las-tablas)
   1. Tabla Categorías de Factura
   2. Tabla Clientes
   3. Tabla Dueños de los Kioscos
@@ -60,17 +60,17 @@ DER para ir directamente a esa sección de la página)
   12. Tabla Historial de Productos
   13. Tabla Historial de Facturas
       
-+ Objetos de la Base de Datos
++ [Objetos de la Base de Datos](https://github.com/vazquezdev1/SQL-53175/blob/main/README.md#---objetos-de-la-base-de-datos)
   1. Vistas (Views)
   2. Funciones (Functions)
   3. Procedimientos Almacenados (Stored Procedures)
   4. Disparadores (Triggers)
      
-+ Inserción de Datos
++ [Inserción de Datos](https://github.com/vazquezdev1/SQL-53175/blob/main/README.md#---paso-a-paso-para-la-inserci%C3%B3n-de-datos)
   1. Por Interfaz Gráfica
   2. A través del archivo `Population.sql`
   
-+ Herramientas Utilizadas
++ [Herramientas Utilizadas](https://github.com/vazquezdev1/SQL-53175/blob/main/README.md#--herramientas-utilizadas)
 
 <h2 align="center">
   <ins> Diagrama Entidad - Relación (DER)</ins>
