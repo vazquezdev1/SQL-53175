@@ -99,7 +99,7 @@ Nombre del archivo para editar el Diagrama Entidad - Relación:
 
 <p align="center"><em> Tablas Dimensionales</em></p>
 
-1. <ins><strong>Cate☺☺gorías de Factura</strong></ins>: Tabla que tendrá la información de los tipos de factura en que se puede realizar la compra según la clase de contribuyente que 
+1. <ins><strong>Categorías de Factura</strong></ins>: Tabla que tendrá la información de los tipos de factura en que se puede realizar la compra según la clase de contribuyente que 
 sea el cliente. 
 </br> A = Responsable inscripto a Responsable inscripto/Monotributista.
 </br> B = Responsable inscripto a Consumidor final/exento de IVA.
