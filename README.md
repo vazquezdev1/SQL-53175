@@ -76,10 +76,12 @@ DER para ir directamente a esa sección de la página)
 </h2>
 
 <ins><em> Parte Izquierda </em></ins>
+
 ![1  DER Proyecto Final CoderHouse Izquierda](https://github.com/vazquezdev1/SQL-53175/assets/123138886/52ae8461-cd8d-426b-aa6f-c1eb3db0d02a)
 <!-- Insertar imágen izquierda del DER con la Etiqueta "<img=>" -->
 
 <ins><em> Parte Derecha </em></ins>
+
 ![2  DER Proyecto Final CoderHouse Derecha](https://github.com/vazquezdev1/SQL-53175/assets/123138886/1eb27843-41ea-4602-8c36-dd3f352d675e)
 <!-- Insertar imágen derecha del DER con la Etiqueta "<img=>" -->
 
