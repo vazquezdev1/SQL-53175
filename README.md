@@ -290,3 +290,48 @@ Disparadores (Triggers)
 | tgr_after_update_Employees             | employees       | After Update      | EmployeesHistory | Registra la información antigua de los empleados por si se actualiza con error o por si se quiere comparar los datos anteriores con los nuevos para auditar y crear un recorrido.|
 | tgr_after_update_Products              | products        | After Update      | ProductsHistory  | Registra la información antigua de los productos por si se actualiza con error o por si se quiere comparar los datos anteriores con los nuevos para auditar y crear un recorrido. </br> Además, se incorpora una columna donde resume el tipo de cambio que se le realizó al registro original.|
 | tgr_after_update_Bills                 | bills           | After Update      | BillsHistory     | Registra la información antigua de las facturas por si se actualiza con error o por si se quiere comparar los datos anteriores con los nuevos para auditar y crear un recorrido. </br> Además, se incorpora una columna donde resume el tipo de cambio que se le realizó al registro original.|
+
+<h2 align="center">
+  <ins> Paso a Paso para la Inserción de Datos</ins>
+</h2>
+
+<p align="center"><em>Por Interfaz Gráfica</em></p>
+
+1. Con el <b><em>MySQL Workbench</b></em> abierto, ver en el panel izquierdo la tabla donde se desea ingresar los datos y darle click derecho.
+2. Elegir la opción de <b>`Table Data Import Wizard`</b>.
+3. Se abrirá una ventana donde te pedirá ingresar la ruta del archivo que contiene los datos, presiona a la derecha donde dice `Browse` o `Examinar`.
+4. Elige el archivo que corresponda con la tabla (aparece con el mismo nombre de la tabla agregando la palabra `_data.csv`). Una vez seleccionado el archivo correctamente, presionar en `Next>`.
+5. Aparecerá otra ventana indicando si se quiere ingresar los datos en una tabla ya existente o si se quiere crear una nueva tabla para esta importación, nosotros seleccionaremos `Usar una tabla existente` o `Use existing table`.
+
+<ins>A considerar</ins>: Si es la primera vez que se insertan los datos sobre la tabla, el cuadro de `Truncar datos antes de importar` o `Truncate data before import` debe estar desmarcado; por el contrario, si algunos datos aún siguen en la tabla y quiere ingresar todos de nuevo, tendrá que marcar esa opción.
+
+6. Seleccionar, si se requiere, las columnas de la tabla destino para que coincida con las de la tabla fuente (ambas columnas tienen los mismos nombres), presionar en `Next>`.
+7. Aparecerá otra ventana justo antes de ingresar los datos, presionar a la izquierda en el botón de `Show Logs` y presionar en `Next>` cuando esté listo.
+8. Se abrirá la última ventana que indicará cuántos registros fueron ingresados correctamente en la tabla.
+
+<p align="center">
+  <em>A Través del Archivo <strong>Population.sql</strong> (manera recomendada)</em>
+</p>
+
+> [!TIP]
+> Se sugiere abrir los archivos en el siguiente orden para que los objetos (en especial los <em>triggers</em>) puedan funcionar cuando se inserten los datos del archivo `Population.sql`
+
++ `KiosksDB.sql` -> (Script de la estructura de la Base de Datos).
+
+Los siguientes 4 archivos se encuentran en la carpeta `DB_objects`
++ `1. Views.sql`.
++ `2. Functions.sql`.
++ `3. Stored Procedures.sql`.
++ `4. Triggers.sql` -> (Script de los triggers de la Base de Datos y la creación de algunas tablas de auditoría).
++ `Population.sql` -> (Script para la inserción de los datos provenientes de los archivos `.csv` dentro de la Base de Datos).
+
+<h2 align="center">
+  <ins>Herramientas Utilizadas</ins>
+</h2>
+
++ <b><em> ChatGPT 🤖</em></b> -> (consultas sobre errores de sintaxís en el código).
++ <b><em> Documentación de MySQL 📝</em></b> -> (revisión de sintaxis, alternativas para realizar determinadas sentencias y explicación de recursos extra que podían aportar a mi proyecto).
++ <b><em> Git 💻</em></b> -> (sistema de control de versiones para crear un repositorio local y subir los archivos a un repositorio remoto).
++ <b><em> GitHub :octocat: </em></b> -> (creación de repositorio remoto para almacenar los archivos y el código de la Base de Datos en la Web).
++ <b><em> Mockaroo 🦘</em></b> -> (generación de datos aleatorios de manera masiva para almacenarlos/utilizarlos en el proyecto).
++ <b><em> Docker 📦🐳</em></b> -> (Creación de contenedores para probar la DB en otro ambiente diferente al que se desarrolló el proyecto).
