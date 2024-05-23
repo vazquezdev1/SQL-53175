@@ -3,9 +3,10 @@
   <em> (KiosksDB) </em>
 </h1>
 
-<ins> Curso</ins>: SQL <ins> Comisión</ins>: 53175
+<ins><strong>Curso</strong></ins>: SQL <ins><strong>Comisión</strong></ins>: 53175
 
-<ins> Nombre del alumno</ins>: Vazquez Velasquez, Henry José
+<ins><strong>Nombre del alumno</strong></ins>: Vazquez Velasquez, Henry José
+<img src="https://github.com/vazquezdev1/SQL-53175/assets/123138886/2942e3b7-6088-4889-bbd1-a8f50b0564ce" style="width: 100% ; aspect-ratio:16/9" title="Imagen SQL General">
 
 <h2 align="center">
   <ins> Temática de la Base de Datos</ins>
@@ -76,14 +77,10 @@ DER para ir directamente a esa sección de la página)
 </h2>
 
 <ins><em> Parte Izquierda </em></ins>
-
-![1  DER Proyecto Final CoderHouse Izquierda](https://github.com/vazquezdev1/SQL-53175/assets/123138886/52ae8461-cd8d-426b-aa6f-c1eb3db0d02a)
-<!-- Insertar imágen izquierda del DER con la Etiqueta "<img=>" -->
+<img src="https://github.com/vazquezdev1/SQL-53175/assets/123138886/b8c4e523-65b6-4995-8fe2-dac50289adf9" style="width: 100% ; aspect-ratio:16/9" title="Parte izquierda del Diagrama Entidad - Relación">
 
 <ins><em> Parte Derecha </em></ins>
-
-![2  DER Proyecto Final CoderHouse Derecha](https://github.com/vazquezdev1/SQL-53175/assets/123138886/1eb27843-41ea-4602-8c36-dd3f352d675e)
-<!-- Insertar imágen derecha del DER con la Etiqueta "<img=>" -->
+<img src="https://github.com/vazquezdev1/SQL-53175/assets/123138886/08ada073-0552-4d96-8d8b-7f0090246772" style="width: 100% ; aspect-ratio:16/9" title="Parte derecha del Diagrama Entidad - Relación">
 
 <p align="center"> 
 Nombre del archivo para editar el Diagrama Entidad - Relación:
