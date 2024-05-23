@@ -76,6 +76,8 @@ DER para ir directamente a esa sección de la página)
 </h2>
 
 <ins><em> Parte Izquierda </em></ins>
+<img src="![1  DER Proyecto Final CoderHouse Izquierda](https://github.com/vazquezdev1/SQL-53175/assets/123138886/92230a76-8563-488e-9f9c-6590fa385012)
+">
 <!-- Insertar imágen izquierda del DER con la Etiqueta "<img=>" -->
 
 <ins><em> Parte Derecha </em></ins>
